@@ -66,14 +66,27 @@
         margin-bottom: 1rem;
     }
 
+    @media (max-width: 768px) {
+    .hero .container-fluid {
+        flex-direction: column; /* Empilha os elementos na vertical */
+    }
 
+    .hero .col-md-6 {
+        text-align: left; /* Alinha o texto à esquerda no mobile */
+    }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .accordion img {
-                width: 50%;
-            }
-        }
+    .hero img {
+        display: none; /* Oculta a imagem */
+    }
+
+    .hero p {
+        font-size: 16px !important; /* Reduz o tamanho da fonte */
+    }
+    .hero{
+        height: 90vh;
+        padding: 0px;
+    }
+    }
   </style>
 </head>
 <body>
@@ -89,14 +102,14 @@
 </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+<section class="hero">
 
         <div class="container-fluid d-flex align-items-center">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-6">
                 <img src="img\inicio.jpg " class="img-fluid w-100" alt="logo_doacao">
             </div>
-            <div class="col-6">
-                <p class="p-5 fs-4">
+            <div class="col-sm-6 col-sm-6">
+                <p class="p-md-5 p-sm-2 fs-4">
                     A doação de sangue é um ato de solidariedade e amor ao próximo, essencial para salvar vidas e garantir o funcionamento dos serviços de saúde. Contudo, ainda existem muitos mitos e preconceitos que cercam esse gesto tão nobre. Compreender a verdade por trás desses mitos é fundamental para incentivar mais pessoas a se tornarem doadoras. Neste espaço, desmistificaremos algumas das crenças mais comuns sobre a doação de sangue, esclarecendo informações e promovendo a conscientização. Se você já teve dúvidas sobre o processo, requisitos ou impactos da doação, aqui você encontrará as respostas que precisa. Vamos juntos derrubar os mitos e destacar as verdades, ajudando a construir uma cultura de doação e cuidado com a vida!
                 </p>
                 <!-- <div class="d-grid col-6 pt-5 justify-content-end">
@@ -107,7 +120,7 @@
     
         </div>
     
-  </section>
+</section>
 
   <!-- About Section -->
   <!-- <section id="about" class="py-5">
@@ -126,7 +139,7 @@
 
   <div class="container-fluid p-5">
     <div class="row">
-        <div class="col-5 p-5 card shadow">
+        <div class="col-md-5 col-sm-5 p-5 card shadow">
             <div class="text-center mb-3 fs-4">
                 <h2>Mitos</h2>
                 <p>Desvende as verdades por trás dos mitos mais comuns sobre a doação de sangue.</p>
@@ -172,12 +185,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 d-flex align-items-center justify-content-center">
+        <div class="col-md-2 col-sm-2 d-flex align-items-center justify-content-center">
             <img src="img/logo.jpg" alt="logo_doacao" style="width: 150px;">
 
         </div>
 
-        <div class="col-md-5 p-5 card shadow">
+        <div class="col-md-5 col-sm-5 p-5 card shadow">
             <div class="text-center mb-3 fs-4">
                 <h2>Verdades</h2>
                 <p>Conheça os benefícios e fatos que fazem da doação de sangue um ato tão importante.</p>
