@@ -1,36 +1,89 @@
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #e63946;
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  .hero {
+    background: linear-gradient(rgba(71, 7, 7, 0.8), rgba(55, 1, 1, 0.8)), url('img/img1.jpg') no-repeat center center/cover;
     color: white;
-    padding: 20px;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-.informacoes, .mitos-verdades {
-    background-color: white;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #d62839;
-}
-
-footer {
+  }
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #e63946;
-    color: white;
-} */
+      padding: 10px 0;
+      background-color: #e63946;
+      color: white;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  /* Styling do acordeão */
+  .accordion-button:not(.collapsed) {
+          background-color: #d9534f; /* Cor de destaque */
+          color: white;
+          font-weight: bold;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+  }
+
+  .accordion-button {
+      background-color:#c9302c; /* Cor de fundo padrão */
+      color: #ffffff;
+      border: none;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+  }
+
+  .accordion-button:hover {
+      background-color: #c9302c;
+      color: white;
+  }
+
+  .accordion-body {
+      background-color: #d7bbbb;
+      padding: 20px;
+      border-radius: 0.25rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion-item {
+      border: none;
+      margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero .container-fluid {
+        flex-direction: column; /* Empilha os elementos na vertical */
+    }
+
+    .hero .col-md-6 {
+        text-align: left; /* Alinha o texto à esquerda no mobile */
+    }
+
+    .hero img {
+        display: none; /* Oculta a imagem */
+    }
+
+    .hero p {
+        font-size: 16px !important; /* Reduz o tamanho da fonte */
+    }
+    .hero{
+        height: 70vh;
+        padding: 0px;
+    }
+    .title{
+        font-size:1.2rem;
+    }
+    .logo{
+        width: 40%;
+        padding:0px;
+    }
+    .card-mobile{
+        padding: 0px;
+    }
+  }
