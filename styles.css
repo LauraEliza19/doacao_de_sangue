@@ -2,9 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
   }
   .hero {
-    background: linear-gradient(rgba(71, 7, 7, 0.8), rgba(55, 1, 1, 0.8)), url('img/img1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(71, 7, 7, 0.5), rgba(55, 1, 1, 0.9)), url('img/inicio.jpg') no-repeat center center/cover;
     color: white;
-    height: 65vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
   footer {
     text-align: center;
       padding: 10px 0;
-      background-color: #e63946;
+      background-color: #801919;
       color: white;
   }
   .nav-link {
@@ -32,7 +32,7 @@ body {
   }
 
   .accordion-button {
-      background-color:#c9302c; /* Cor de fundo padrão */
+      background-color:#801919; /*   Cor de fundo padrão */
       color: #ffffff;
       border: none;
       transition: all 0.3s ease;
@@ -40,7 +40,7 @@ body {
   }
 
   .accordion-button:hover {
-      background-color: #c9302c;
+      background-color: #822f2f;
       color: white;
   }
 
