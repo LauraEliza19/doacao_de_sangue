@@ -116,6 +116,7 @@ body {
     /* Reduzir o tamanho das imagens em telas pequenas */
     #mitos_verdades img {
       width: 100px;
+      margin: 10px;
     }
     #mitos_verdades{
       padding: 0.8rem !important;
