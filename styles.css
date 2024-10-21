@@ -1,5 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
+
   }
   .hero {
     background: linear-gradient(rgba(71, 7, 7, 0.5), rgba(55, 1, 1, 0.9)), url('img/inicio.jpg') no-repeat center center/cover;
@@ -91,4 +92,37 @@ body {
       border-radius: 0.25rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-md-5, .col-md-2 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .col-md-2 img {
+      max-width: 100px;
+    }
+  
+    /* Centralizar texto e ajustar fontes para telas menores */
+    .text-center h1, .text-center p {
+      font-size: 1.2rem;
+    }
+  
+    .accordion-button {
+      font-size: 0.9rem;
+    }
+    
+    .accordion-body {
+      font-size: 0.85rem;
+    }
+  
+    /* Reduzir o tamanho das imagens em telas pequenas */
+    #mitos_verdades img {
+      width: 100px;
+    }
+
   }
