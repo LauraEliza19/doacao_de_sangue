@@ -14,6 +14,8 @@ body {
   .card img {
     object-fit: cover;
     height: 200px;
+    margin: 0;
+    padding: 0;
   }
   footer {
     text-align: center;
@@ -59,70 +61,67 @@ body {
 
   @media (max-width: 768px) {
     .hero .container-fluid {
-        flex-direction: column; /* Empilha os elementos na vertical */
+      flex-direction: column; /* Empilha os elementos na vertical */
     }
-
+  
     .hero .col-md-6 {
-        text-align: left; /* Alinha o texto à esquerda no mobile */
+      text-align: left; /* Alinha o texto à esquerda no mobile */
     }
-
+  
     .hero img {
-        display: none; /* Oculta a imagem */
+      display: none; /* Oculta a imagem */
     }
-
+  
     .hero p {
-        font-size: 16px !important; /* Reduz o tamanho da fonte */
+      font-size: 16px !important; /* Reduz o tamanho da fonte */
     }
-    .hero{
-        height: 70vh;
-        padding: 0px;
+  
+    .title {
+      font-size: 1.2rem;
     }
-    .title{
-        font-size:1.2rem;
+  
+    .logo {
+      width: 40%;
+      padding: 0px;
     }
-    .logo{
-        width: 40%;
-        padding:0px;
-    }
-    .card-mobile{
-        padding: 0px;
-    }
-    #about{
-      padding: 20px;
+  
+    #about {
+      padding: 15px; /* Reduzido o padding */
       border-radius: 0.25rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+  
     .row {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  
-    .col-md-5, .col-md-2 {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .col-md-2 img {
-      max-width: 100px;
-    }
-  
-    /* Centralizar texto e ajustar fontes para telas menores */
-    .text-center h1, .text-center p {
-      font-size: 1.2rem;
+      margin: 0; /* Remove margens */
+      padding: 0; /* Remove padding */
     }
   
     .accordion-button {
       font-size: 0.9rem;
     }
-    
+  
     .accordion-body {
-      font-size: 0.85rem;
+      font-size: 1rem;
+    }
+  
+    .card {
+      margin: 0; /* Removido margin */
+      padding: 0; /* Removido padding */
+      width: 100%;
     }
   
     /* Reduzir o tamanho das imagens em telas pequenas */
     #mitos_verdades img {
       width: 100px;
     }
-
+    #mitos_verdades{
+      padding: 0.8rem !important;
+    }
+    .padding_mobile{
+      padding: 0.9rem !important;
+      margin: 0;
+    }
   }
