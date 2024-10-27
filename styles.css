@@ -58,8 +58,74 @@ body {
       border: none;
       margin-bottom: 1rem;
   }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  header {
+      background-color: #801919;
+      color: white;
+  }
+
+  .navbar .nav-link {
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: color 0.3s;
+  }
+
+  .navbar .nav-link:hover {
+      color: #ffcccb;
+  }
+
+  .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 20px;
+  }
+
+  .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .accordion-button {
+      background-color: #801919;
+      color: white;
+      font-weight: 600;
+      transition: background-color 0.3s;
+  }
+
+  .accordion-button:not(.collapsed) {
+      background-color: #bf4d4d;
+  }
+
+  footer {
+      background-color: #801919;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+  }
+
+  .btn-custom {
+      background-color: #801919;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+  }
+
+  .btn-custom:hover {
+      background-color: #bf4d4d;
+  }
 
   @media (max-width: 768px) {
+    .qrcode{
+      width: 80% !important;
+    }
+
     .hero .container-fluid {
       flex-direction: column; /* Empilha os elementos na vertical */
     }
